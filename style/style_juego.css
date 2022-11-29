@@ -1,0 +1,557 @@
+/* Mobile first */
+
+@media (min-width: 320px) {
+    body{
+        background-color: #000123;
+        width: 100%;
+        min-width: 320px;
+        max-width: 480px;
+    }
+    
+    h2{
+        color: #ff0f7b;
+        font-family: 'Syne Mono', monospace;
+        display: flex;
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+
+    h4{
+        color:#ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+    .subtitulo{
+        color: #ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .button1{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        padding:5px ;
+        margin-left: 3.5rem;
+        font-size: 1.5rem;
+ 
+    }
+
+    .button2{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        padding:5px ;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .button3{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        padding:5px ;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+    
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .container1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    video::-webkit-media-controls {
+        display: none;
+    }
+
+    .nav{
+        width: 130%;
+        margin-left: 2rem;
+    }
+
+    .game{
+        width: 70%;
+    }
+
+
+    .muerte{
+        width: 60%;
+        height: auto;
+        margin-top: 4rem;
+    }
+}
+
+
+/* Movil Horizontal */
+
+@media (min-width: 480px) and (orientation: landscape) {
+    body{
+        background-color: #000123;
+        width: 100%;
+        min-width: 480px;
+        max-width: 768px;
+    }
+    
+    h2{
+        color: #ff0f7b;
+        font-family: 'Syne Mono', monospace;
+        display: flex;
+        margin-left: 1rem;
+        font-size: 3rem;
+    }
+
+    h4{
+        color:#ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+
+    }
+
+    .subtitulo{
+        color: #ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .button1{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        padding:5px ;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+ 
+    }
+
+    .button2{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        padding:5px ;
+        font-size: 1.5rem;
+    }
+
+    .button3{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        margin-top: 1rem;
+        padding:5px; 
+        font-size: 1.5rem;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .container1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    video::-webkit-media-controls {
+        display: none;
+    }
+
+    .nav{
+        width: 100%;
+        margin-right: 2rem;
+    
+    }
+
+    .game{
+        width: 70%;
+    }
+
+
+    .muerte{
+        width: 60%;
+        height: auto;
+        margin-top: 4rem;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+    body{
+        background-color: #000123;
+        width: 100%;
+        min-width: 768px;
+        max-width: 1024px;
+    }
+    
+    h2{
+        color: #ff0f7b;
+        font-family: 'Syne Mono', monospace;
+        display: flex;
+        margin-left: 1rem;
+        font-size: 5rem; 
+    }
+
+    h4{
+        color:#ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 2rem;
+        font-size: 2rem;
+
+    }
+
+    .subtitulo{
+        color: #ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 1rem;
+        font-size: 2rem;
+
+    }
+
+    .button1{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;  
+        margin-left: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+ 
+    }
+
+    .button2{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        margin: 20px;
+        margin-left: 3.5rem;
+        font-size: 2rem;
+    }
+
+    .button3{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 500px;
+        margin: 20px;
+        padding:5px; 
+        margin-left: 3.5rem;
+        font-size: 2rem;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+    
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    video::-webkit-media-controls {
+        display: none;
+    }
+
+    .nav{
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .game{
+        width: 70%;
+    }
+
+
+    .muerte{
+        width: 60%;
+        height: auto;
+        margin-top: 4rem;
+    }
+}
+
+
+/* Tablet Horizontal */
+
+@media (min-width: 1024px) {
+    body{
+        background-color: #000123;
+        width: 100%;
+        min-width: 1024px;
+        max-width: 1200px;
+    }
+    
+    h2{
+        color: #ff0f7b;
+        font-family: 'Syne Mono', monospace;
+        display: flex;
+        margin-left: 1rem;
+        font-size: 5rem; 
+    }
+
+    h4{
+        color:#ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 2rem;
+        font-size: 3rem;
+
+    }
+
+    .subtitulo{
+        color: #ffffff;
+        font-family: 'Syne Mono', monospace;
+        margin-left: 1rem;
+        font-size: 2.5rem;
+
+    }
+
+    .button1{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;  
+        margin-left: 1rem;
+        padding: 1rem;
+        font-size: 3rem;
+        width: 600px;
+ 
+    }
+
+    .button2{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 600px;
+        margin: 20px;
+        margin-left: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .button3{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 600px;
+        height: auto;
+        margin: 20px;
+        padding:5px; 
+        margin-left: 3.5rem;
+        font-size: 3rem;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+    
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+
+    }
+
+    video::-webkit-media-controls {
+        display: none;
+    }
+
+    .nav{
+        width: 90%;
+    }
+
+    .game{
+        width: 70%;
+    }
+
+
+    .muerte{
+        width: 60%;
+        height: auto;
+        margin-top: 4rem;
+    }
+}
+
+
+/* Escritorio */
+
+@media (min-width: 1200px) {
+    body{ 
+        background-color: #000123;
+        width: 100%;
+        min-width: 1200px;
+        max-width: 1920px;
+    }
+
+    main{
+        display: grid;
+        grid-template-areas: "container1 container2" 
+        "resultado footer";
+    }
+
+    .container1{
+        grid-area: container1;
+    }
+    
+    .container2{
+        grid-area: container2;
+    
+    }
+
+    .resultado{
+        grid-area: resultado;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end:2 ;
+    }
+    
+    h2{
+        color: #ff0f7b;
+        font-family: 'Syne Mono', monospace;
+        display: flex;
+        font-size: 4rem; 
+    }
+
+    h4{
+        color:#ffffff;
+        font-family: 'Syne Mono', monospace;
+        font-size: 2rem;
+
+    }
+
+    .subtitulo{
+        color: #ffffff;
+        font-family: 'Syne Mono', monospace;
+        font-size: 1.5rem;
+
+    }
+
+    .button1{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;  
+        font-size: 2rem;
+        width: 300px;
+ 
+    }
+
+    .button2{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 300px;
+        font-size: 2rem;
+        margin-top: 10rem;
+    }
+
+    .button3{
+        font-family: 'Syne Mono', monospace;
+        border-radius: 20px;
+        background-color: #ff0f7b;
+        border-color: #ff0f7b;
+        color: #ffffff;
+        width: 300px;
+        height: auto;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    video::-webkit-media-controls {
+        display: none;
+    }
+
+    .nav{
+        width: 50%;
+    }
+
+    .game{
+        width: 50%;
+    }
+
+
+    .muerte{
+        width: 40%;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+}
