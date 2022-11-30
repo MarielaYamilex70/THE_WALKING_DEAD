@@ -55,6 +55,11 @@ h1 {
   padding: 10px;
 }
 
+.boton:hover{
+  text-shadow: 0 0 30px #fff;
+}
+
+
 .evento {
   position: absolute;
   left: 29%;
@@ -168,6 +173,10 @@ video::-webkit-media-controls {
     background-color: #FF0F7B;
     padding: 10px;
   }
+
+  .boton:hover{
+    text-shadow: 0 0 30px #fff;
+}
   
   .evento {
     position: absolute;
@@ -282,6 +291,10 @@ video::-webkit-media-controls {
     background-color: #FF0F7B;
     padding: 10px;
   }
+
+  .boton:hover{
+    text-shadow: 0 0 30px #fff;
+}
   
   .evento {
     position: absolute;
@@ -394,6 +407,10 @@ video::-webkit-media-controls {
     background-color: #FF0F7B;
     padding: 15px;
   }
+
+  .boton:hover{
+    text-shadow: 0 0 30px #fff;
+}
   
   .evento {
     position: absolute;
@@ -505,6 +522,11 @@ video::-webkit-media-controls {
     background-color: #FF0F7B;
     padding: 15px;
   }
+
+  .boton:hover{
+    text-shadow: 0 0 30px #fff;
+}
+
   
   .evento {
     position: absolute;
