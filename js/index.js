@@ -88,12 +88,14 @@ function sacrificar_coder() {
         console.log(arreglo_coders); 
 
         ///////////SE ABRE EL POPUP///////////
+        document.getElementById("audio_muerte").play();
         document.querySelector('#mensaje_sacrificio').textContent = `Se ha sacrificado la coder: "${sacrificada}"`;
         modal_container_sacrifica.classList.add('show_sacrifica');  
                
     } else {
         //////////NO HAY LISTA DE CODERS //////////////
         document.querySelector('#mensaje_fin').textContent = 'La última coder ha sido sacrificada';
+        document.getElementById("audio_fin").play();
         modal_container_fin.classList.add('show_fin'); 
         console.log('No existe la lista de Coders');
     } 

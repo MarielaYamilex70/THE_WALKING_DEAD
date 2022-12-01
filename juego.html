@@ -60,7 +60,15 @@
 
         <div class="modal_container_sacrifica" id="modal_container_sacrifica">
             <div class="modal_sacrifica">
-                <img class="muerte" src="images/MUERTE.png" alt="">
+                <audio id="audio_muerte" >
+                    <source src="./audio/005074910_prev.mp3" type="">
+                    Navegador no compatible con Audio de HTML 5
+                </audio>
+                
+                    <img class="muerte slide-right " src="images/MUERTE.png" alt="">
+                
+
+                
                 <h3 class="mensaje_sacrificio" id="mensaje_sacrificio"></h3>
                 <button class="button1" id="close_sacrifica">CONTINUAR....</button>
             </div>
@@ -68,6 +76,10 @@
 
         <div class="modal_container_fin" id="modal_container_fin">
             <div class="modal_fin">
+                <audio id="audio_fin" >
+                    <source src="./audio/ES_Whoosh_To_Hit_11-SFX_Producer.wav" type="">
+                    Navegador no compatible con Audio de HTML 5
+                </audio>
                 <video class="game" controls autoplay loop>
                     <source src="videos/game-over.mp4" type="video/mp4">
                     Tu navegador no soporta la etiqueta HTML5 video.
