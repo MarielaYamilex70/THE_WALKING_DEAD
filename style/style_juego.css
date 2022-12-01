@@ -555,3 +555,259 @@
     }
 
 }
+
+
+/************ MODAL INI **************/
+
+.modal_container{
+    display: flex;
+    bottom: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  /*para que no se pueda ver*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;  /*para que se pueda ver*/
+}
+
+.modal{
+    background-color: #451A73;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(252, 249, 251);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.modal h2{
+    margin-top:  5px;
+}
+
+.modal p{
+    opacity: 0 7;
+    font-size: 25px;
+}
+
+.modal button{
+    font-family: 'Syne Mono', monospace;
+    border-radius: 20px;
+    background-color: #ff0f7b;
+    border-color: #ff0f7b;
+    color: #ffffff;
+    width: 180px;
+    font-size: 1em;
+        
+}
+
+.nombre_coder{
+    height: 25px;
+    size: 100;
+    font-size: 25px;
+}
+
+.mensaje_error{
+    font-family: 'Syne Mono', monospace;
+    color: #ff0f7b !important;
+    
+}
+
+.lista_Coders{
+    font-family: 'Syne Mono', monospace;
+    justify-content: left;
+    color: white;
+    font-size: 2em;
+    
+}
+
+#padre{
+    position:relative;
+    /*background-color: bisque;*/
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    /*height: 100%;
+    width: 100%;*/
+}
+  
+#hijo{
+    position: absolute;
+    /*background-color: violet;*/
+    top: 7.5em;
+    left: 10.5em;
+    margin: 0;
+    padding: 0;
+    width: 19.7em;
+    height: 25.8em;
+    overflow: scroll;
+    opacity: 0.5;
+}
+
+.modal_container_sacrifica{
+    display: flex;
+    bottom: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  /*para que no se pueda ver*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.show_sacrifica{
+    pointer-events: auto;
+    opacity: 1;  /*para que se pueda ver*/
+}
+
+.modal_sacrifica{
+    background-color: #451A73;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(252, 249, 251);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.modal_sacrifica h2{
+    margin-top:  5px;
+}
+
+.modal_sacrifica h3{
+    opacity: 0 7;
+    font-size: 25px;
+}
+
+.modal_sacrifica button{
+    font-family: 'Syne Mono', monospace;
+    border-radius: 20px;
+    background-color: #ff0f7b;
+    border-color: #ff0f7b;
+    color: #ffffff;
+    width: 180px;
+    font-size: 1em;
+        
+}
+
+modal_container_sacrifica{
+    display: flex;
+    bottom: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  /*para que no se pueda ver*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.show_sacrifica{
+    pointer-events: auto;
+    opacity: 1;  /*para que se pueda ver*/
+}
+
+.modal_sacrifica{
+    background-color: #451A73;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(252, 249, 251);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.modal_sacrifica h2{
+    margin-top:  5px;
+}
+
+.modal_sacrifica h3{
+    opacity: 0 7;
+    font-size: 25px;
+}
+
+.modal_sacrifica button{
+    font-family: 'Syne Mono', monospace;
+    border-radius: 20px;
+    background-color: #ff0f7b;
+    border-color: #ff0f7b;
+    color: #ffffff;
+    width: 180px;
+    font-size: 1em;
+        
+}
+
+.modal_container_fin{
+    display: flex;
+    bottom: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  /*para que no se pueda ver*/
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.show_fin{
+    pointer-events: auto;
+    opacity: 1;  /*para que se pueda ver*/
+}
+
+.modal_fin{
+    background-color: #451A73;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(252, 249, 251);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.modal_fin h2{
+    margin-top:  5px;
+}
+
+.modal_fin h3{
+    opacity: 0 7;
+    font-size: 25px;
+}
+
+.modal_fin button{
+    font-family: 'Syne Mono', monospace;
+    border-radius: 20px;
+    background-color: #ff0f7b;
+    border-color: #ff0f7b;
+    color: #ffffff;
+    width: 180px;
+    font-size: 1em;
+        
+}
+/************ MODAL FIN **************/

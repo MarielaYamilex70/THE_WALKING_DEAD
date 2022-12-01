@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>THE WALKING DEAD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
@@ -17,19 +17,26 @@
         <div class="container1">
             <h2>NOMBRE DE LAS CODERS</h2>
             <p class="subtitulo">Introduce los nombres de las coders que participan en este evento</p>
-            <button class="button1">INTRODUCIR NOMBRE <i class="bi bi-arrow-right-circle-fill"></i></button>
+            <button class="button1" id="open_add">INTRODUCIR NOMBRE <i class="bi bi-arrow-right-circle-fill"></i></button>
         </div>
 
-        <div class="container2">
+        <div class="container2" id="padre">
             <video class="nav" controls autoplay loop>
                 <source src="videos/navegador.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta HTML5 video.
             </video>
+            
+            <div id="hijo">
+                <ul class="lista_Coders" id="lista_Coders">
+                </ul>
+            </div>
         </div> 
+
         <div class="container3">   
-            <a class="button2">¿TE ATREVES A JUGAR? <i class="bi bi-play-circle-fill"></i></a>
+            <a class="button2" id="play">¿TE ATREVES A JUGAR? <i class="bi bi-play-circle-fill"></i></a>
             <a href="index.html" ><button class="button3">VOLVER A JUGAR<i class="bi bi-arrow-repeat"></i></button></a>
         </div>
+
         <div class="resultado">
             <H4>CODER A SACRIFICAR:</H4>
             <img class="muerte" src="images/MUERTE.png" alt="">
@@ -38,7 +45,38 @@
                 Tu navegador no soporta la etiqueta HTML5 video.
             </video>
         </div>
+
+        <div class="modal_container" id="modal_container">
+            <div class="modal">
+                <h2>Introducir Coder</h2>
+                <label for="">Nombre:</label>
+                <input type="text" class="nombre_coder" id="nombre_coder">
+                <br><br>
+                <p class="mensaje_error" id="mensaje_error"></p>
+                <button class="button1" id="add">Introducir</button>
+                <button class="button1" id="close">Cerrar</button>
+            </div>
+        </div>
+
+        <div class="modal_container_sacrifica" id="modal_container_sacrifica">
+            <div class="modal_sacrifica">
+                <img class="muerte" src="images/MUERTE.png" alt="">
+                <h3 class="mensaje_sacrificio" id="mensaje_sacrificio"></h3>
+                <button class="button1" id="close_sacrifica">CONTINUAR....</button>
+            </div>
+        </div>
+
+        <div class="modal_container_fin" id="modal_container_fin">
+            <div class="modal_fin">
+                <video class="game" controls autoplay loop>
+                    <source src="videos/game-over.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta HTML5 video.
+                </video>
+                <h3 class="mensaje_fin" id="mensaje_fin"></h3>
+                <button class="button1" id="close_fin">Fin...</button>
+            </div>
+        </div>
     </main>
-    
-</body>
+    <script src="./js/index.js"></script>
+ /body>
 </html>

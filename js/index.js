@@ -1,37 +1,18 @@
-//console.log("Hola!!!!!");
-//prompt("Escribe un nombre");
-//alet("Ok");
-
 let arreglo_coders = [];
-//let cont_coders = 0;
-const open_add = document.getElementById('open');
+const open_add = document.getElementById('open_add');
 const modal_container = document.getElementById('modal_container');
 const close_add = document.getElementById('close');
 const add_coder = document.getElementById('add');
 
 open_add.addEventListener('click', () => {
+    ////////SE ABRE EL MODAL PARA ENTAR LAS CODERS///////
     modal_container.classList.add('show');  
     //alert('Prueba'); 
 });  
 
 function cargar_lista_coders(nombres) {
     let lista;
-    /*if (nombres.length > 0){
-        let el = document.getElementById('lista_Coders');
-        let els = el.getElementsByTagName('li');
-        let long_els = els.length;
-        //vec=[]
-        
-        for(i=0;i<long_els;i++){
-            if(els[i].parentNode==el){
-                //vec.push(els[i]);
-                console.log(els[i]);
-                els[i].remove();
-            }    
-        }
-        //alert(vec.length);
-    }*/
-   
+    ////////SE BORRA LA LISTA DE CODERS///////   
     // Eliminando todos los hijos de un elemento UL
     let elemento = document.getElementById("lista_Coders");
     while (elemento.firstChild) {
@@ -47,7 +28,6 @@ function cargar_lista_coders(nombres) {
 }
 
 function random_lista_coders(nombres) {
-    //let nombre = nombres[(Math.random() * nombres.length) | 0]
     //console.log(nombre);
     ///////DEVUELVE EL INDICE DEL ARREGLO PARA SACRIFICAR LA CODER //////
     let rand = Math.floor(Math.random() * nombres.length);
@@ -66,65 +46,75 @@ add_coder.addEventListener('click', () => {
     let existe_coder = false;
     if (nombre_coder != ''){
         arreglo_coders.forEach(coder => {
-            //existe_coder = coder == nombre_coder ? true : false ;
+            // SE VALIDA SI EXISTE YA LA CODERS
             if (coder == nombre_coder) existe_coder = true;
            
         });
-        if (!existe_coder) {
-            ////////SE ADICIONAN LAS CODERS////////////
-            //arreglo_coders[cont_coders] = nombre_coder;
-            //cont_coders++;
+        if (!existe_coder) { // Si no esta la coders  en el arreglo
+            ////////SE ADICIONA LA CODER////////////
             arreglo_coders.push(nombre_coder);
             ///////SE LIMPIA EL INPUT Y EL MENSAJE DE ERROR/////
             document.querySelector('#nombre_coder').value = '';
             document.querySelector('#mensaje_error').textContent = '';
-        } else {
+        } else { // Si esta la coders  en el arreglo
             ///////SE GENERA UN MENSAJE DE ERROR/////
             document.querySelector('#mensaje_error').textContent = 'ERROR: Ya existe el coder '+ nombre_coder;
-
         }
-        
     }
     //alert('Nombre: '+ nombre_coder); 
     console.log(arreglo_coders);
- 
+
 });
 
-function sacrificar_coder(rand) {
-    //Se sacrifica la coders
-    //setTimeout(() => {
-        removed = arreglo_coders.splice(rand, 1);
-        console.log(arreglo_coders); 
-    //}, 1000);
+
+close_fin.addEventListener('click', () => {
+    ////////// CIERRA POPUP FIN//////
+    modal_container_fin.classList.remove('show_fin');  
+});  
+
+function sacrificar_coder() {
+    let rand; 
+    let sacrificada;
     
+    if (arreglo_coders.length){
+        //alert('Comenzaremos en breve el sacrificio de Coders...');
+        ///////SE BUSCA ALEATORIAMENTE LA CODER A SACRIFICAR /////////
+        rand = random_lista_coders(arreglo_coders);
+        console.log(`posicion aleatoria: ${rand}`);
+        sacrificada = arreglo_coders[rand];
+
+        ///////SE SACRIFICA LA CODER//////////
+        let removed = arreglo_coders.splice(rand, 1);
+        console.log(arreglo_coders); 
+
+        ///////////SE ABRE EL POPUP///////////
+        document.querySelector('#mensaje_sacrificio').textContent = `Se ha sacrificado la coder: "${sacrificada}"`;
+        modal_container_sacrifica.classList.add('show_sacrifica');  
+               
+    } else {
+        //////////NO HAY LISTA DE CODERS //////////////
+        document.querySelector('#mensaje_fin').textContent = 'La última coder ha sido sacrificada';
+        modal_container_fin.classList.add('show_fin'); 
+        console.log('No existe la lista de Coders');
+    } 
 }
 
 function sayHi() {
     alert('Comenzaremos en breve el sacrificio de Coders...');
 }
+
+close_sacrifica.addEventListener('click', () => {
+    ////////// CIERRA POPPUP ///////
+    modal_container_sacrifica.classList.remove('show_sacrifica'); 
+    cargar_lista_coders(arreglo_coders); 
+    sacrificar_coder();
+});  
   
 play.addEventListener('click', () => {
     //setTimeout(sayHi, 1000);
-    let rand; 
-    let sacrificada;
-    let removed;
-    if (arreglo_coders.length){
-        while (arreglo_coders.length) {
-            alert('Comenzaremos en breve el sacrificio de Coders...');
-            //Se busca aleatoriamente la coders a sacrificar
-            rand = random_lista_coders(arreglo_coders);
-            console.log(`posicion aleatoria: ${rand}`);
-            sacrificada = arreglo_coders[rand];
-            console.log('Se va a sacrificar la Coders '+ sacrificada); 
-            sacrificar_coder(rand);
-            //Espera
-            //setTimeout(() => sacrificar_coder, 1000);
-            
-            
-        }
-    } else {
-        console.log('No existe la lista de Coders');
-    } 
+    ///////// COMIENZA EL JUEGO ////////
+    sacrificar_coder();
+    
 });
 
 //setTimeout(() => alert('Hola'), 1000);
