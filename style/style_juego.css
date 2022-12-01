@@ -707,7 +707,7 @@
         
 }
 
-modal_container_sacrifica{
+.modal_container_sacrifica{
     display: flex;
     bottom: rgba(0, 0, 0, 0.3);
     align-items: center;

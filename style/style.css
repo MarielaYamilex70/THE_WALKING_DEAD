@@ -371,7 +371,7 @@ video::-webkit-media-controls {
     font-size: 70px;
     font-family: 'Syne Mono', monospace;
   }
-  
+
   .sacrificio {
     position: absolute;
     top: 6%;
@@ -541,7 +541,7 @@ video::-webkit-media-controls {
     justify-content: space-evenly;
     align-items: center;
     position: absolute ;
-    top: 60%;
+    top: 55%;
   
   }
   
